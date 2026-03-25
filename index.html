@@ -4,6 +4,10 @@
 <head>
 <meta charset="UTF-8">
 <title>Pet Shop do Vargas</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
@@ -11,15 +15,16 @@
 <header>
 
 <h1>Pet Shop do Vargas</h1>
-
-<p> Amamos PETs ! </p>
+<p>Amamos PETs!</p>
 
 <nav>
 <a href="#racoes">Rações</a> |
 <a href="#brinquedos">Brinquedos</a> |
 <a href="#acessorios">Acessórios</a> |
 <a href="#servicos">Serviços</a> |
+<a href="#agendamento">Agendamento</a> |
 <a href="#contato">Contato</a>
+
 </nav>
 
 <hr>
@@ -28,65 +33,272 @@
 
 <main>
 
-<h2 id="racoes">Categoria: Rações</h2>
+<!-- Carrosel imagens  -->
 
+<div id="carouselExample" class="carousel slide">
+
+<div class="carousel-inner">
+
+<div class="carousel-item active">
+<img src="familia-pet.png" class="d-block w-100" alt="Familia Feliz com seus pets">
+</div>
+
+<div class="carousel-item">
+<img src="bolacao.webp" class="d-block w-100" alt="Brinquedo para cachorro">
+</div>
+
+<div class="carousel-item">
+<img src="bandana.jfif" class="d-block w-100" alt="Acessórios para pets">
+</div>
+
+</div>
+
+<button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+<span class="carousel-control-prev-icon"></span>
+</button>
+
+<button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+<span class="carousel-control-next-icon"></span>
+</button>
+
+</div>
+
+<!-- Grupo de racoes  -->
+
+<h2 id="racoes" class="categoria">Categoria: Rações</h2>
+
+<div class="container">
+<div class="row">
+
+<div class="col-md-6 produto">
 <h3>Ração para Cachorro</h3>
-<img src="racao.jpg" width="200">
+<img src="racao.jpg" width="200" alt="Ração para cachorro">
 <p>Ração nutritiva para cães adultos.</p>
 <p>Valor: R$ 120,00</p>
+</div>
 
+<div class="col-md-6 produto">
 <h3>Ração para Gatos</h3>
-<img src="racaogato.jfif" width="200">
+<img src="racaogato.jfif" width="200" alt="Ração para gato">
 <p>Ração balanceada para gatos.</p>
 <p>Valor: R$ 95,00</p>
+</div>
 
-<hr>
+</div>
+</div>
 
-<h2 id="brinquedos">Categoria: Brinquedos</h2>
+<!-- Os brinquedos -->
 
+<h2 id="brinquedos" class="categoria">Categoria: Brinquedos</h2>
+
+<div class="container">
+<div class="row">
+
+<div class="col-md-6 produto">
 <h3>Bola para Cachorro</h3>
-<img src="bolacao.webp" width="200">
+<img src="bolacao.webp" width="200" alt="Bola de brinquedo cachorro">
 <p>Bola resistente para brincar.</p>
 <p>Valor: R$ 20,00</p>
+</div>
 
-<h3>Bola elastica para gato</h3>
-<img src="bolagato.webp" width="200">
+<div class="col-md-6 produto">
+<h3>Bola elástica para gato</h3>
+<img src="bolagato.webp" width="200" alt="Bola para gatos brincar">
 <p>Brinquedo divertido para gatos.</p>
 <p>Valor: R$ 18,00</p>
+</div>
 
-<hr>
+</div>
+</div>
 
-<h2 id="acessorios">Categoria: Acessórios</h2>
+<!-- Acessorios dos pets -->
 
+<h2 id="acessorios" class="categoria">Categoria: Acessórios</h2>
+
+<div class="container">
+<div class="row">
+
+<div class="col-md-6 produto">
 <h3>Coleira para Cachorro</h3>
-<img src="colera.jpg" width="200">
+<img src="colera.jpg" width="200" alt="Coleira para cachorros">
 <p>Coleira confortável para passeios.</p>
 <p>Valor: R$ 35,00</p>
+</div>
 
+<div class="col-md-6 produto">
 <h3>Bandanas</h3>
-<img src="bandana.jfif" width="200">
+<img src="bandana.jfif" width="200" alt="Bandana para gatos">
 <p>Bandanas para o pet ficar mais lindo.</p>
 <p>Valor: R$ 40,00</p>
+</div>
 
-<hr>
+</div>
+</div>
 
-<h2 id="servicos">Serviços</h2>
+<!-- Servicos do pet  -->
 
+<h2 id="servicos" class="categoria">Categoria: Serviços</h2>
+
+<div class="container">
+<div class="row">
+
+<div class="col-md-6 produto">
 <h3>Banho</h3>
+<img src="banhopet.png" width="200" alt="Banho para cachorro">
 <p>Banho completo com produtos especiais.</p>
 <p>Valor: R$ 50,00</p>
-<p>Tele-busca: Sim</p>
+<p>Tele-busca disponível</p>
+</div>
 
+<div class="col-md-6 produto">
 <h3>Tosa</h3>
+<img src="tosapet.png" width="200" alt="Tosa para cachorro">
 <p>Tosa profissional para cães.</p>
 <p>Valor: R$ 60,00</p>
-<p>Tele-busca: Sim</p>
+<p>Tele-busca disponível</p>
+</div>
+
+</div>
+</div>
 
 </main>
 
 <hr>
 
+<!-- Formulario para o cadastro   -->
+
+<h2 id="agendamento" class="categoria">Agendamento de Serviço</h2>
+
+<div class="container">
+
+<form onsubmit="confirmarAgendamento(); return false;">
+
+<!-- Formulario para o cadastro do pessoa  -->
+
+<h3>Dados do Cliente</h3>
+
+<div class="row">
+
+<div class="col-md-6">
+<label>Nome</label>
+<input type="text" class="form-control"  placeholder="Digite seu nome" required>
+</div>
+
+<div class="col-md-6">
+<label>CPF</label>
+<input type="text" class="form-control" placeholder="Digite seu CPF" required>
+</div>
+
+</div>
+
+<br>
+
+<div class="row">
+
+<div class="col-md-6">
+<label>Endereço</label>
+<input type="text" class="form-control" placeholder="Digite seu endereço" required>
+</div>
+
+<div class="col-md-6">
+<label>Telefone</label>
+<input type="tel" class="form-control" placeholder="Digite seu DDD + número (ex: 51 99999-9999)" required>
+</div>
+
+</div>
+
+<br>
+
+<div class="row">
+
+<div class="col-md-6">
+<label>Email</label>
+<input type="email" class="form-control" placeholder="Digite seu email" required>
+</div>
+
+<div class="col-md-6">
+<label>Sexo</label><br>
+<input type="radio" name="sexo"> Masculino
+<input type="radio" name="sexo"> Feminino
+</div>
+
+</div>
+
+<hr>
+
+<!-- Formulario para o cadastro do pet  -->
+
+<h3>Dados do Pet</h3>
+
+<div class="row">
+
+<div class="col-md-6">
+<label>Nome do Pet</label>
+<input type="text" class="form-control" placeholder="Digite o nome do seu pet" required>
+</div>
+
+<div class="col-md-6">
+<label>Raça</label>
+<input type="text" class="form-control" placeholder="Digite a raça do pet" required>
+</div>
+
+</div>
+
+<br>
+
+<div class="row">
+
+<div class="col-md-6">
+<label>Idade</label>
+<input type="text" class="form-control" placeholder="Digite a idade do pet" required>
+</div>
+
+<div class="col-md-6">
+<label>Serviço</label><br>
+<input type="radio" name="servico"> Banho
+<input type="radio" name="servico"> Tosa
+</div>
+
+</div>
+
+<hr>
+<!--  agendar data e hora -->
+<h3>Agendamento</h3>
+
+<div class="row">
+
+<div class="col-md-6">
+<label>Data</label>
+<input type="date" class="form-control" required>
+</div>
+
+<div class="col-md-6">
+<label>Hora</label>
+<input type="time" class="form-control" required>
+</div>
+
+</div>
+
+<br>
+<!-- tele busca ou levar  -->
+<label>Forma de Atendimento</label><br>
+
+<input type="radio" name="entrega"> Tele-busca  
+<input type="radio" name="entrega"> Levar no local
+
+<br><br>
+
+<button class="btn btn-success">Agendar Serviço</button>
+
+</form>
+
+</div>
+
+<hr>
+
 <footer id="contato">
+
+<!-- Contatos site   -->
 
 <h2>Contato</h2>
 
@@ -98,6 +310,15 @@
 
 </footer>
 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<!--Script para o alerta de agendamento confirmado   -->
+
+<script>
+function confirmarAgendamento(){
+alert("Agendamento realizado com sucesso!");
+}
+</script>
+
 </body>
 </html>
-
